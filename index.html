@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div id="logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    <div class="card">
+      <div class="card-input">
+        <div>
+          <label for="bill">Bill</label>
+          <span class="dolor">$</span> <input class="number" id="bill-input" type="number" name="" placeholder="0" required>
+        </div>
+        <label for="tip" class="opt-btn">Select Tip %</label>
+        <div class="btn-row">
+          <button id="btn">5%</button>
+          <button id="btn">10%</button>
+          <button id="btn" >15%</button>
+          <button id="btn">25%</button>
+          <button id="btn">50%</button>
+          <input class="custom number" id="custom" oninput="myFunction()" type="number" name="Custom" placeholder="Custom">
+        </div>
+        <div class="people">
+          <label for="tip" class="last">Number of People</label>
+          <span class="person">
+            <img src="images/icon-person.svg" alt="">
+          </span><input id="total-person" type="number" name="" placeholder="0">
+        </div>
+
+      </div>
+      <div class="result-card">
+        <div class="row1">
+          <div class="headings">
+            <h5> Tip Amount</h5>
+            <h6> / person</h6>
+          </div>
+          <div class="result">
+            <p id="tip">$0.00</p>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="headings">
+            <h5> Total</h5>
+            <h6> / person</h6>
+          </div>
+          <div class="result">
+            <p id="bill-per">$0.00</p>
+          </div>
+        </div>
+        <button class="reset" onclick="del()" >RESET</button>
+      </div>
+    </div>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>

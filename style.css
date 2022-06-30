@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+.container {
+    font-weight: 700;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 41%, 84%);
+}
+
+#logo {
+    position: absolute;
+    top: 10%;
+    height: 6%;
+}
+
+.card {
+    height: 60%;
+    width: 70%;
+    background: white;
+    border-radius: 1rem;
+    display: flex;
+}
+
+.card-input {
+    display: grid;
+    width: 50%;
+    height: 90%;
+    margin: 1.3rem 0 1.3rem 1.3rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.result-card {
+    height: 90%;
+    width: 50%;
+    margin: 1.3rem;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    background-color: hsl(183, 100%, 15%);
+    display: inline;
+}
+
+label {
+    color: hsl(184, 14%, 56%);
+    font-size: 14px;
+}
+
+input {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    height: 2.5rem;
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+input:active,
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.dolor {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    position: relative;
+    left: -11%;
+    color: hsl(184, 14%, 56%);
+    top: 40%;
+}
+
+.opt-btn {
+    margin-bottom: 1rem;
+}
+
+.btn-row {
+    display: inline;
+    width: 100%;
+}
+
+#btn {
+    height: 2.3rem;
+    width: 5.5rem;
+    margin: .2rem;
+    border: none;
+    border-radius: .3rem;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+}
+
+#btn:active,
+#btn:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.custom {
+    font-size: 16px;
+    font-weight: 700;
+    height: 2.3rem;
+    width: 5.5rem;
+    margin: .5rem 0 .3rem;
+    border: none;
+    border-radius: .3rem;
+    color: hsl(184, 14%, 56%);
+    text-align: right;
+
+}
+
+.custom:active {
+    border: 1px solid hsl(183, 100%, 15%);
+}
+
+.custom::placeholder {
+    text-align: center;
+}
+
+.last {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.people {
+    margin: 1.5rem 0 1rem 0;
+}
+
+.person {
+    position: relative;
+    top: 42%;
+    left: -40%;
+}
+
+.row1,
+.row2 {
+    display: flex;
+    margin: 3rem 1rem 3rem 1rem;
+}
+
+.headings {
+    margin: -0.5rem;
+    flex: 50%;
+}
+
+.result {
+    text-align: right;
+    flex: 50%;
+    color: hsl(172, 67%, 45%);
+    font-size: 29px;
+    font-weight: 700;
+}
+
+h5 {
+
+    margin-top: 1rem;
+    color: hsl(0, 0%, 100%);
+}
+
+h6 {
+    color: hsl(184, 14%, 56%);
+}
+
+.reset {
+    display: block;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(186, 14%, 43%);
+    border: none;
+    border-radius: .3rem;
+    height: 2.4rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 6rem;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.reset:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        display: grid
+    }
+
+    #logo {
+        height: 100%;
+        position: relative;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo img {
+        height: 60%;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        display: inline;
+        height: 90%;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .card-input {
+        width: 90%;
+        height: 50%;
+        display: -ms-inline-grid;
+    }
+
+    .result-card {
+        width: 90%;
+        height: 35%;
+        display: block;
+        margin-top: 3rem;
+        border-radius: 1.2rem;
+        background-color: hsl(183, 100%, 15%);
+    }
+
+    .btn-row {
+        display: block;
+        margin: auto;
+    }
+
+    #btn,
+    .custom {
+        width: 8.7rem;
+    }
+}
