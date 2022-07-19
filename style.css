@@ -69,6 +69,7 @@ label {
 }
 
 input{
+    cursor: pointer;
     position: relative;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -119,6 +120,7 @@ input:focus {
 }
 
 #btn {
+    cursor: pointer;
     height: 2.3rem;
     width: 4.5rem;
     margin: .2rem;
@@ -237,6 +239,7 @@ h6 {
 }
 
 .reset {
+    cursor: pointer;
     display: block;
     color: hsl(183, 100%, 15%);
     background-color: hsl(186, 14%, 43%);
