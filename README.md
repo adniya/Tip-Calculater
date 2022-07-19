@@ -34,7 +34,8 @@ The tip and total amount are updated immediately when any of the inputs changes.
 The user sees a label or color update based on the tip amount.
 
 
-## My process
+## links
+Live Site - [@adniya](https://tip-p-calculator.netlify.app/)
 
 ### Built with
 -Semantic HTML5 markup
