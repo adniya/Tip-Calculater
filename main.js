@@ -12,13 +12,14 @@ nodeList.forEach(node => {
 
 function clickHandler(e) {
     var bill = document.getElementById('bill-input').value;
+    if(person.value >0){
+        document.getElementById("msg").style.display="none";
+     }
     if (e.target.textContent === '5%') {
+
         let tipbill=0.05 * bill;
         let totalbill = + bill + (tipbill);
-        console.log(totalbill);
-        console.log(person.value);
         let result = totalbill / person.value;
-        console.log(result);
         billperPerson.textContent = result;
         tip.textContent = '$' + tipbill.toFixed(2);
     }
@@ -29,7 +30,7 @@ function clickHandler(e) {
         console.log(person.value);
         let result = totalbill / person.value;
         console.log(result);
-        billperPerson.textContent = result;
+        billperPerson.textContent = result.toFixed(2);
         tip.textContent = '$' + tipbill.toFixed(2);
     }
     if (e.target.textContent == '15%') {
@@ -39,7 +40,7 @@ function clickHandler(e) {
         console.log(person.value);
         let result = totalbill / person.value;
         console.log(result);
-        billperPerson.textContent = result;
+        billperPerson.textContent = result.toFixed(2);
         tip.textContent = '$' + tipbill.toFixed(2);
     }
     if (e.target.textContent == '25%') {
@@ -49,17 +50,14 @@ function clickHandler(e) {
         console.log(person.value);
         let result = totalbill / person.value;
         console.log(result);
-        billperPerson.textContent = result;
+        billperPerson.textContent = result.toFixed(2);
         tip.textContent = '$' + tipbill.toFixed(2);
     }
     if (e.target.textContent == '50%') {
         let tipbill=0.5 * bill;
         let totalbill = + bill + (tipbill);
-        console.log(totalbill);
-        console.log(person.value);
         let result = totalbill / person.value;
-        console.log(result);
-        billperPerson.textContent = result;
+        billperPerson.textContent = result.toFixed(2);
         tip.textContent = '$' + tipbill.toFixed(2);
     }
     if (e.target.textContent == custom) {
