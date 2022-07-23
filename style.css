@@ -7,7 +7,7 @@
 }
 body{
     padding: 1rem;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     padding: 1rem;
     background-color: hsl(185, 41%, 84%);
@@ -18,6 +18,7 @@ body{
     min-width: 90vw;
     display: grid;
     place-content: center;
+    min-height: 100vh;
 }
 
 .card {
@@ -30,19 +31,21 @@ body{
 @media (min-width:50em) {
     .container{
         place-content: center;
+        height: 65%;
     }
     .card {
+        padding: rem;
         margin-inline: auto;
-        max-width: 80%;
+        max-width: 100%;
         grid-template-columns: repeat(2, minmax(1rem, 1fr));
     }
 }
 
 
 #logo {
-    height: 20vh;
+    display: grid;
     padding-block-end: 2rem;
-    text-align: center;
+ justify-content: center;
 }
 
 .card-input {
